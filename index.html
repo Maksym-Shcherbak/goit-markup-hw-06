@@ -61,31 +61,40 @@
           <div class="modal-window">
             <p class="modal-window-title">Leave your contacts and we will call you back</p>
             <form action="POST" class="order-form">
-              <label>
+              <label class="order-name label">
                 Name
-                <input type="text" name="name" class="order-input-name"
-              /></label>
-              <label>
+                <input type="text" name="name" class="order-input-name input" autofocus />
+                <span class="icon-name span-modal"
+                  ><svg class="icon-modal" width="12" height="12">
+                    <use href="./images/icons.svg#persona"></use></svg></span
+              ></label>
+              <label class="oreder-phone label">
                 Phone
-                <input type="tel" name="phone_number" class="order-input-phone"
-              /></label>
-              <label>
+                <input type="tel" name="phone_number" class="order-input-phone input" /><span
+                  class="icon-phone span-modal"
+                  ><svg class="icon-modal" width="12" height="12">
+                    <use href="./images/icons.svg#phone"></use></svg></span
+              ></label>
+              <label class="order-mail label">
                 Email
-                <input type="email" name="email" class="order-input-email"
-              /></label>
-              <label>
+                <input type="email" name="email" class="order-input-email input" /><span
+                  class="icon-mail span-modal"
+                  ><svg class="icon-modal" width="12" height="12">
+                    <use href="./images/icons.svg#email"></use></svg></span
+              ></label>
+              <label class="order-comment label">
                 Comment
                 <textarea
                   name="comment"
-                  class="order-input-comment"
-                  cols="30"
+                  class="order-input-comment input"
                   rows="6"
                   placeholder="Text input"
                 ></textarea>
               </label>
               <label class="order-check">
-                <input type="checkbox" name="accept" class="order-input-accept" />
-                I accept the terms and conditions of the<a href="#">Privacy Policy</a>
+                <input type="checkbox" name="accept" class="order-input-accept visually-hidden" />
+                <span class="icon-check"></span>
+                I accept the terms and conditions of the &nbsp;<a href="#">Privacy Policy</a>
               </label>
               <button type="submit" class="order-form-btn">Send</button>
             </form>
