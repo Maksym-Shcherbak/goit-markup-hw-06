@@ -743,6 +743,12 @@ label {
 .order-input-phone {
 }
 
+.order-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .order-form-btn {
   min-width: 169px;
   padding: 16px 32px;
