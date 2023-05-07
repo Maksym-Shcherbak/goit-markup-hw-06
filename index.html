@@ -60,7 +60,7 @@
         <div class="modal is-hidden" data-modal>
           <div class="modal-window">
             <p class="modal-window-title">Leave your contacts and we will call you back</p>
-            <form action="POST" class="order-form">
+            <form action="javascript:void(0);" class="order-form">
               <label class="order-name label">
                 Name
                 <input type="text" name="name" class="order-input-name input" autofocus />
@@ -92,7 +92,12 @@
                 ></textarea>
               </label>
               <label class="order-check">
-                <input type="checkbox" name="accept" class="order-input-accept visually-hidden" />
+                <input
+                  type="checkbox"
+                  name="accept"
+                  value="done"
+                  class="order-input-accept visually-hidden"
+                />
                 <span class="icon-check"></span>
                 I accept the terms and conditions of the &nbsp;<a href="#">Privacy Policy</a>
               </label>
@@ -461,7 +466,7 @@
             </li>
           </ul>
         </div>
-        <form action="" class="footer-send-form">
+        <form action="javascript:void(0);" class="footer-send-form">
           <label class="footer-send">
             Subcribe
             <input type="email" name="email" placeholder="E-mail" class="footer-input-email" />
