@@ -564,10 +564,10 @@ img {
 
 .modal-window {
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: var(--modal-background);
   margin: auto;
-  padding: 0 24px 24px;
+  padding: 72px 24px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -577,6 +577,9 @@ img {
 .modal-window-btn {
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--accent);
   color: var(--dark);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -607,7 +610,7 @@ img {
 
 /* Modal animation */
 .modal {
-  perspective: 1300px;
+  perspective: 1000px;
 }
 
 .modal.is-hidden .modal-window {
@@ -712,7 +715,7 @@ label {
 }
 
 .modal-window-title {
-  margin: 72px auto 16px;
+  margin-bottom: 16px;
   font-weight: 500;
   text-align: center;
 }
@@ -722,7 +725,10 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  gap: 8px;
+}
+
+.order-form:nth-child(4) {
+  gap: 16px;
 }
 
 .label {
@@ -730,6 +736,7 @@ label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  margin-bottom: 8px;
   color: var(--subtle-text);
 }
 
@@ -738,6 +745,9 @@ label {
   border: 1px solid var(--modal-overlay);
   border-radius: 4px;
   padding: 8px 16px 8px 38px;
+  margin-top: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus {
@@ -751,10 +761,12 @@ label {
   height: 24px;
   top: 50%;
   left: 16px;
+  transform: translatey(3px);
 }
 
 .icon-modal {
   fill: var(--dark);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus + .span-modal > .icon-modal {
@@ -776,7 +788,7 @@ label {
 }
 
 .order-comment {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .order-check {
@@ -788,7 +800,7 @@ label {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .icon-check {
